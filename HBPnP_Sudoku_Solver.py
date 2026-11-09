@@ -1,4 +1,59 @@
 # HBPnP Sudoku Solver
+# Author: Steven Brashear
+"""
+=====================================================================================
+                       Improved HBPnP Sudoku benchmark profile                       
+=====================================================================================
+Processor     : Intel64 Family 6 Model 142 Stepping 11, GenuineIntel
+Logical CPUs  : 8
+Platform      : Windows 11
+Python        : 3.14.3
+-------------------------------------------------------------------------------------
+
+TEST NAME                | EMPTY BOXES  | TIME (ms)    | BACKTRACKING | STATUS
+-----------------------------------------------------------------------------------------------
+ Static Easy Puzzle      | 51           | 9.1581       | 0            | Solved
+Random Easy Puzzle       | 33           | 7.9906       | 0            | Solved
+Random Medium Puzzle     | 47           | 13.8123      | 0            | Solved
+Random Hard Puzzle       | 54           | 26.7158      | 0            | Solved
+-------------------------------------------------------------------------------------
+
+
+Test #2:
+=====================================================================================
+                       Improved HBPnP Sudoku benchmark profile                       
+=====================================================================================
+Processor     : Intel64 Family 6 Model 142 Stepping 11, GenuineIntel
+Logical CPUs  : 8
+Platform      : Windows 11
+Python        : 3.14.3
+-------------------------------------------------------------------------------------
+
+TEST NAME                | EMPTY BOXES  | TIME (ms)    | BACKTRACKING | STATUS
+-----------------------------------------------------------------------------------------------
+ Static Easy Puzzle      | 51           | 7.4326       | 0            | Solved
+Random Easy Puzzle       | 32           | 5.922        | 0            | Solved
+Random Medium Puzzle     | 42           | 10.009       | 0            | Solved
+Random Hard Puzzle       | 56           | 28.2397      | 0            | Solved
+
+test #3:
+=====================================================================================
+                       Improved HBPnP Sudoku benchmark profile                       
+=====================================================================================
+Processor     : Intel64 Family 6 Model 142 Stepping 11, GenuineIntel
+Logical CPUs  : 8
+Platform      : Windows 11
+Python        : 3.14.3
+-------------------------------------------------------------------------------------
+
+TEST NAME                | EMPTY BOXES  | TIME (ms)    | BACKTRACKING | STATUS
+-----------------------------------------------------------------------------------------------
+ Static Easy Puzzle      | 51           | 5.9077       | 0            | Solved
+Random Easy Puzzle       | 38           | 4.9832       | 0            | Solved
+Random Medium Puzzle     | 42           | 6.65         | 0            | Solved
+Random Hard Puzzle       | 58           | 55.931       | 1            | Solved
+"""
+
 
 import time
 import platform
