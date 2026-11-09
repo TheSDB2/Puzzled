@@ -186,6 +186,7 @@ def print_hardware_profile():
     print(f"Target processor: {platform.processor()}")
     print(f"Target RAM     : {str(psutil.virtual_memory().total // (1024 ** 3))}GB")
     print(f"Target OS      : {platform.system()} {platform.release()}")
+    print(f"Python version  : {platform.python_version()}")
     print("-" * 85 + "\n")
 
 
