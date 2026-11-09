@@ -2,69 +2,53 @@
 Main execution script for Sudoku CSP Solver and Hardware Benchmark Suite
 
 Author: Sylvester Reyes
-Test #1: Easy, Medium, and Hard Puzzles
+Test #1: 
 =====================================================================================
-                           CSP hardware benchmark profile                            
-=====================================================================================
-Targe processor: Intel Core i5
-Target RAM: 16GB
+Target processor: Intel64 Family 6 Model 142 Stepping 11, GenuineIntel
+Target RAM     : 15GB
 Target OS      : Windows 11
 -------------------------------------------------------------------------------------
 
 TEST NAME            | EMPTY BOXES  | TIME (ms)    | BACKTRACKING | STATUS
 -------------------------------------------------------------------------------------
-Easy Puzzle          | 51           | 74.8006      | 4157         | Solved
-Medium Puzzle        | 62           | 1412.9547    | 78368        | Solved
-Hard Puzzle          | 61           | 19728.6036   | 1770759      | Solved
+ Static Easy Puzzle  | 51           | 53.248       | 4157         | Solved
+Random Easy Puzzle   | 35           | 1.1044       | 64           | Solved
+Random Medium Puzzle | 48           | 15.6099      | 912          | Solved
+Random Hard Puzzle   | 56           | 23.2886      | 1475         | Solved
 -------------------------------------------------------------------------------------
-Test #2: Easy, Medium, and Hard Puzzles
+
+test #2:
 =====================================================================================
-                           CSP hardware benchmark profile                            
-=====================================================================================
-Targe processor: Intel Core i5
-Target RAM: 16GB
+Target processor: Intel64 Family 6 Model 142 Stepping 11, GenuineIntel
+Target RAM     : 15GB
 Target OS      : Windows 11
 -------------------------------------------------------------------------------------
 
 TEST NAME            | EMPTY BOXES  | TIME (ms)    | BACKTRACKING | STATUS
 -------------------------------------------------------------------------------------
- Static Easy Puzzle  | 51           | 44.6517      | 4157         | Solved
-Random Easy Puzzle   | 33           | 0.8693       | 54           | Solved
-Random Medium Puzzle | 43           | 2.0586       | 178          | Solved
-Random Hard Puzzle   | 56           | 7.0461       | 578          | Solved
+ Static Easy Puzzle  | 51           | 64.9718      | 4157         | Solved
+Random Easy Puzzle   | 35           | 0.5638       | 3            | Solved
+Random Medium Puzzle | 47           | 1.8269       | 37           | Solved
+Random Hard Puzzle   | 53           | 3.3522       | 159          | Solved
 -------------------------------------------------------------------------------------
-Test #3: Easy, Medium, and Hard Puzzles
+
+test #3:
 =====================================================================================
                            CSP hardware benchmark profile                            
 =====================================================================================
-Targe processor: Intel Core i5
-Target RAM: 16GB
+Target processor: Intel64 Family 6 Model 142 Stepping 11, GenuineIntel
+Target RAM     : 15GB
 Target OS      : Windows 11
 -------------------------------------------------------------------------------------
 
 TEST NAME            | EMPTY BOXES  | TIME (ms)    | BACKTRACKING | STATUS
 -------------------------------------------------------------------------------------
- Static Easy Puzzle  | 51           | 44.1477      | 4157         | Solved
-Random Easy Puzzle   | 34           | 1.2428       | 78           | Solved
-Random Medium Puzzle | 45           | 2.5599       | 148          | Solved
-Random Hard Puzzle   | 58           | 98.71        | 7801         | Solved
--------------------------------------------------------------------------------------
-Test #4: Easy, Medium, and Hard Puzzles
-=====================================================================================
-                           CSP hardware benchmark profile                            
-=====================================================================================
-Targe processor: Intel Core i5
-Target RAM: 16GB
-Target OS      : Windows 11
+ Static Easy Puzzle  | 51           | 75.0657      | 4157         | Solved
+Random Easy Puzzle   | 37           | 2.7351       | 66           | Solved
+Random Medium Puzzle | 43           | 16.0209      | 871          | Solved
+Random Hard Puzzle   | 52           | 12.3443      | 381          | Solved
 -------------------------------------------------------------------------------------
 
-TEST NAME            | EMPTY BOXES  | TIME (ms)    | BACKTRACKING | STATUS
--------------------------------------------------------------------------------------
- Static Easy Puzzle  | 51           | 45.0802      | 4157         | Solved
-Random Easy Puzzle   | 35           | 2.8252       | 66           | Solved
-Random Medium Puzzle | 44           | 0.7506       | 31           | Solved
-Random Hard Puzzle   | 53           | 63.9178      | 5405         | Solved
--------------------------------------------------------------------------------------
 """
 
 import time 
@@ -199,8 +183,8 @@ def print_hardware_profile():
     print("=" * 85)
     print(f"{'CSP hardware benchmark profile': ^85}")
     print("=" * 85)
-    print(f"Targe processor: Intel Core i5")
-    print(f"Target RAM: 16GB")
+    print(f"Target processor: {platform.processor()}")
+    print(f"Target RAM     : {str(psutil.virtual_memory().total // (1024 ** 3))}GB")
     print(f"Target OS      : {platform.system()} {platform.release()}")
     print("-" * 85 + "\n")
 
