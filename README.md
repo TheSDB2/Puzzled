@@ -15,4 +15,4 @@ Alongside the comparative perfomance metrics framework established by Indryono e
 2. Indriyono, Bonifacius Vicky, et al. "Analysis of the Concept of Solving the Sudoku Game Using Backtracking and Brute Force Algorithms." 
 3. System profiling https://docs.python.org/3/library/platform.html
 4. CSP backtracking implementation https://github.com/aimacode/aima-python/blob/master/tests/test_csp.py 
------------------------------------------------------------- Sylvester Reyes ------------------------------------------------------------
+-------------------------------------- Sylvester Reyes -------------------------------------------------
